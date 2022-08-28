@@ -6,7 +6,7 @@ function TaskFrom() {
   const { task, crearTarea } = useContext(MyContext);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [id, setId] = useState(task.length);
+  const [id, setId] = useState(task.length + 3);
 
   const guardarInput = (event) => {
     event.preventDefault();
